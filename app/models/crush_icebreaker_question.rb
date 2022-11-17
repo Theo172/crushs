@@ -1,0 +1,2 @@
+class CrushIcebreakerQuestion < ApplicationRecord
+end

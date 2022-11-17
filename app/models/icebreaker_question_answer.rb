@@ -1,0 +1,2 @@
+class IcebreakerQuestionAnswer < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class ProfileCrush < ApplicationRecord
+end

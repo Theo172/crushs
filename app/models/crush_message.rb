@@ -1,0 +1,2 @@
+class CrushMessage < ApplicationRecord
+end
