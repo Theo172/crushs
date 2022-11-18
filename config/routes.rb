@@ -5,8 +5,9 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
   get 'about', to: 'pages#about'
-  resources :pictures
-  resources :profils
+  resources :profils do
+    resources :pictures
+  end
   resources :likes, only: [:index, :create, :new, :show]
   resources :cities, only: [:new, :create, :show, :update, :edit]
   resources :genders, only: [:new, :create, :show, :update, :edit]
