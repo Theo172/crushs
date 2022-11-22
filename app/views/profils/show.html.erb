@@ -5,3 +5,17 @@
   <ul><%=@profil.birth_date%></ul>
   <ul><%=@profil.gender%></ul>
 </li>
+
+<p><strong>Pictures</strong></p>
+<ul class="list-group">
+  <% @profil.pictures.each do |picture| %>
+    <li class="list-group-item"><%= picture.comment %></li>
+  <% end %>
+  <%= link_to "Delete",
+    picture_path(picture),
+    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+  %>
+</ul>
+
+
+<br>
