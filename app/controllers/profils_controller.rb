@@ -15,7 +15,7 @@ class ProfilsController < ApplicationController
   def create
     @profil = Profil.new(profil_params)
     @profil.save
-    redirect_to profil_path(@profil)
+    redirect_to edit_profil_path(@profil)
   end
 
   def edit

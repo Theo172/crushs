@@ -1,0 +1,15 @@
+<% if @profil.name != "" %>
+  <%= simple_form_for(@profil) do |f| %>
+    <%= f.input :name, required: true%>
+    <%= f.input :gender, required: true %>
+    <%= f.input :birth_date, required: true %>
+    <%= f.input :city_id %>
+    <%= f.submit %>
+  <% end %>
+<% else %>
+  <%= simple_form_for(@profil) do |f| %>
+    <%= f.input :prefered_gender, required: true %>
+    <%= f.input :age_range_id %>
+    <%= f.submit %>
+  <% end %>
+<% end %>
