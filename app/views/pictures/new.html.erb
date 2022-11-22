@@ -1,7 +1,7 @@
 <h1>New picture</h1>
 <%= simple_form_for [@profil, @picture] do |f| %>
   <%= f.input :image_url %>
-  <%= f.submit "Submit picture", class: "btn btn-primary" %>
+  <%= f.input :image_url %>
   <%= f.input :comment %>
-  <%= f.submit "Submit comment", class: "btn btn-primary" %>
+  <%= f.submit "Submit", class: "btn btn-primary" %>
 <% end %>

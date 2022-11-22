@@ -1,4 +1,6 @@
-<% if @profil.name != "" %>
+<% if @profil.pictures != "" %>
+    <%= link_to "ajouter une image", new_profil_picture_path(@profil) %>
+<% elsif @profil.name != ""  %>
   <%= simple_form_for(@profil) do |f| %>
     <%= f.input :name, required: true%>
     <%= f.input :gender, required: true %>

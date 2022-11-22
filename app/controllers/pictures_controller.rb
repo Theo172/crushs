@@ -19,7 +19,7 @@ class PicturesController < ApplicationController
     @picture = Picture.new(picture_params)
     @picture.profil = @profil
     @picture.save
-    redirect_to picture_path(@picture)
+    redirect_to edit_profil_path(@profil)
   end
 
   def edit
