@@ -5,7 +5,7 @@ class ProfilsController < ApplicationController
   end
 
   def show
-    @profil = Profil.find[params[:id]]
+    @profil = Profil.find(params[:id])
   end
 
   def new
@@ -13,7 +13,7 @@ class ProfilsController < ApplicationController
   end
 
   def create
-    @profil = Profil.new(params[:profil])
+    @profil = Profil.new(profil_params)
     @profil.save
     redirect_to profil_path(@profil)
   end
@@ -37,6 +37,7 @@ class ProfilsController < ApplicationController
   private
 
   def profil_params
-    params.require(:profil).permit(:comment, :image_url)
+    params.require(:profil).permit(:name, :birth_date, :email, :password, :gender)
   end
+
 end

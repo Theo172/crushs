@@ -1,0 +1,16 @@
+<%= simple_form_for(@profil) do |f| %>
+  <%= f.input :name, required: true%>
+  <%= f.check_box :gender, required: true %>
+  <%= f.input :birth_date, required: true %>
+  <%= f.input :city_id %>
+  <%= f.submit %>
+<% end %>
+
+  <%# <%= f.input :prefered_gender, required: true %> %>
+  <%# <%= f.input :password, required: true %>
+  <%# <%= f.input :email, required: true %> %> %>
+<%# <%= simple_form_for(@cities) do |f| %> %>
+  <%# <%= f.submit %> %>
+<%# <% end %> %>
+  <%# <%= f.input :gender_id %> %>
+  <%# <%= f.input :age_range_id %> %>
