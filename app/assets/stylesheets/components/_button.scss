@@ -2,6 +2,27 @@
 
 }
 
+.home-btn {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 511px;
+  height: 73px;
+  padding: 10px;
+  margin: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #F5A7B3;
+  margin: 0 auto;
+}
+
+.home-btn a {
+  // padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
 .btn-ghost {
   color: #4A4A4A;
   // border: 1px solid #4A4A4A;

@@ -2,7 +2,7 @@
 .title {
   margin: 0;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border: 5px solid rgb(184, 144, 144);
+  // border: 5px solid rgb(184, 144, 144);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 6em;
   text-align: center;
@@ -19,7 +19,7 @@
 //   text-align: center;
 // }
 
-.border {
+.home-btn {
   background-color: #FFFFFF;
   border-radius: 10px;
   width: 511px;
@@ -31,7 +31,7 @@
   margin: 0 auto;
 }
 
-.border a {
+.home-btn a {
   // padding-top: 20px;
   text-align: center;
   font-weight: bold;
