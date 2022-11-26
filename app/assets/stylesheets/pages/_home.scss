@@ -1,11 +1,7 @@
-.background {
-  background-color: rgba(6, 7, 54, 1);
-  margin: 0;
-  border: 5px red solid;
-}
-
 
 .title {
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border: 5px solid rgb(184, 144, 144);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 6em;
@@ -13,14 +9,15 @@
   letter-spacing: 20px;
   // line-height: 1.6;
   padding-top: 100px;
+  font-weight: bold;
 }
 
-#logo {
-  // text-align: center;
-  border: 5px solid rgb(119, 255, 0);
-  padding: 100px;
-  text-align: center;
-}
+// logo {
+//   // text-align: center;
+//   border: 5px solid rgb(119, 255, 0);
+//   padding: 100px;
+//   text-align: center;
+// }
 
 .border {
   background-color: #FFFFFF;
@@ -39,6 +36,8 @@
   text-align: center;
   font-weight: bold;
   font-size: 2em;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 h1, p {

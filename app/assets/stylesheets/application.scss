@@ -1,8 +1,11 @@
-@import "home";
-@import "navbar";
+@import "pages/home";
+@import "components/navbar";
 @import "font-awesome";
+@import "components/logo";
 
 html, body {
   height: 100%;
   color: rgba(245, 167, 179, 1);
+  background-color: rgba(6, 7, 54, 1);
+  margin: 0;
 }
