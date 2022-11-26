@@ -49,6 +49,8 @@ gem "devise"
 
 gem "font-awesome-sass"
 
+gem "autoprefixer-rails"
+
 gem "simple_form", github: "heartcombo/simple_form"
 
 group :development, :test do
