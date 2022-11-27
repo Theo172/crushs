@@ -1,3 +1,13 @@
+.flexbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item{
+  // flex-grow: 1;
+}
 
 .title {
   margin: 0;
@@ -12,32 +22,12 @@
   font-weight: bold;
 }
 
-// logo {
-//   // text-align: center;
-//   border: 5px solid rgb(119, 255, 0);
-//   padding: 100px;
-//   text-align: center;
-// }
-
-.home-btn {
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  width: 511px;
-  height: 73px;
-  padding: 10px;
-  margin: 50px;
-  text-align: center;
-  box-shadow: 2px 2px 3px #F5A7B3;
-  margin: 0 auto;
+.slogan {
+  margin: 30px;
 }
 
-.home-btn a {
-  // padding-top: 20px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2em;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+.home-footer{
+  margin: 30px;
 }
 
 h1, p {

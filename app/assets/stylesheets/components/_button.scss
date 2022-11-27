@@ -1,8 +1,24 @@
-.login {
-
+.btn-login {
+  border: 2px solid #F5A7B3;
+  width: 200px;
+  border-radius: 10px;
+  // background-color: rgba(255, 255, 255, 0.683);
+  text-align: justify;
+  // position: absolute;
+  // display: block;
+  padding-top: 10px;
 }
 
-.home-btn {
+.btn-login:hover{
+  // border: 2px solid white;
+  background-color: white;
+  text-decoration: none;
+}
+
+.btn-login li {
+  list-style: none;
+}
+.btn-home {
   background-color: #FFFFFF;
   border-radius: 10px;
   width: 511px;
@@ -10,11 +26,12 @@
   padding: 10px;
   margin: 50px;
   text-align: center;
-  box-shadow: 2px 2px 3px #F5A7B3;
-  margin: 0 auto;
+  box-shadow: 1px 1px 2px #F5A7B3;
+  // margin: 0 auto;
+  margin: 30px;
 }
 
-.home-btn a {
+.btn-home a {
   // padding-top: 20px;
   text-align: center;
   font-weight: bold;
