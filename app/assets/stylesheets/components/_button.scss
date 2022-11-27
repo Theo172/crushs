@@ -1,23 +1,48 @@
 .btn-login {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 2px;
   border: 2px solid #F5A7B3;
   width: 200px;
   border-radius: 10px;
-  // background-color: rgba(255, 255, 255, 0.683);
-  text-align: justify;
+  margin: 10px;
+  padding: auto;
+  text-align: center;
+  text-decoration: none;
+  color: white;
   // position: absolute;
   // display: block;
-  padding-top: 10px;
+  padding: 10px 25px 0 0;
+}
+
+.btn-login a{
+  // list-style: none;
+  text-decoration: none;
+  color: white;
 }
 
 .btn-login:hover{
   // border: 2px solid white;
   background-color: white;
+  opacity: 0.9;
   text-decoration: none;
+  transition: all 0.3s linear;
 }
 
-.btn-login li {
+.btn-login:hover a {
+  list-style: none;
+  color: #F5A7B3;
+  transition: all 0.3s linear;
+}
+
+.btn-list-none ul{
   list-style: none;
 }
+
 .btn-home {
   background-color: #FFFFFF;
   border-radius: 10px;
