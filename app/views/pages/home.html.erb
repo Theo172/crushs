@@ -2,7 +2,7 @@
 <%# container-fluid %>
 <%# btn btn-standard-primary th-btn btn-1%>
   <div class="header">
-    <div class="btn btn-login btn-list-none right">
+    <div class="btn btn-login btn-list-none">
       <ul>
         <% if user_signed_in? %>
           <li>
@@ -17,7 +17,8 @@
       </ul>
     </div>
   </div>
-  <div class="main"></div>
+
+  <div class="main">
     <H1 class="title">C R U S H S</H1>
       <div>
         <%= image_tag "logo1", class: "logo-home-page"%>
@@ -27,7 +28,8 @@
       <%= link_to "Trouvez votre crush", new_user_registration_path%>
       </div>
   </div>
-  <div class=" home-footer"></div>
+
+  <div class="conditions"></div>
     <p>En vous inscrivant vous acceptez nos
     <%= link_to "Conditions Générales d’Utilisation", about_path, class: "underline" %>.
     Pour plus d’informations sur l’utilisation des données, consultez notre

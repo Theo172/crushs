@@ -1,9 +1,4 @@
-// .flexbox{
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-around;
-//   align-items: center;
-// }
+
 ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -11,86 +6,59 @@
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 100%;
-  display: grid;
-  grid-template-columns: 220px 1fr 200px;
-  grid-template-rows: auto 1fr auto;
+  justify-content: space-around;
 }
 
 .header{
-  grid-column: span 3;
-  padding: 30px;
-  text-align: center;
-  font-size: 22px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
 }
 
 .main{
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-// .banner{
-//   border: 3px solid red;
-//   height: 200px;
-//   display: flex;
-// }
-.right{
-  // float: right;
-  // align-items: flex-end;
-  // position: absolute;
-  //  top: 30px;
-  //  right: 30px;
-  //  width: 250px;
-  //  margin-bottom: 100px;
-  // padding-left: 30000px;
-}
-
 
 .title {
   margin: 0;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  // border: 5px solid rgb(184, 144, 144);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 6em;
-  text-align: center;
   letter-spacing: 20px;
-  // line-height: 1.6;
-  // padding-top: 50px;
   font-weight: bold;
 }
 
-.slogan {
-  // padding-top: 20px;
-  // margin: 30px;
-}
-
-.home-footer{
-  // margin: 30px;
+.conditions{
+  display: flex;
+  margin: auto;
+  justify-content: center;
 }
 
 .underline{
   text-decoration: underline;
+  color: #F5A7B3;
   :hover {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+    color: #F5A7B3;
   }
 }
 
+
+
 h1, p {
   color: #F5A7B3;
-  // text-align: center;
-  // margin-top: 100px;
 }
 
 h2 {
   color: #FFFFFF;
   font-size: 50px;
   text-shadow: 2px 2px 0px #F5A7B3;
-  // text-align: center;
 }
 
 a {
@@ -98,3 +66,6 @@ a {
   text-decoration: none;
   color: #F5A7B3;
 }
+a:hover {
+  color: #F5A7B3;
+  }

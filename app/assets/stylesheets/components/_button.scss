@@ -61,9 +61,15 @@
   }
 }
 
+.btn-home:hover {
+  border: 2px solid #F5A7B3;
+}
 .btn-home:hover a {
-  color: #060736;
+  color: #F5A7B3;
   transition: all 0.2s linear;
+  opacity: 0.9;
+  // text-shadow: 24px 24px 1px #060736;
+  // rotate: 12deg;
 }
 
 .btn-ghost {
