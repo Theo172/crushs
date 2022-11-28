@@ -5,6 +5,12 @@
   align-items: center;
 }
 
+.right{
+  float: right;
+  border: 4px solid red;
+  // position: relative;
+  // padding-left: 30000px;
+}
 .item{
   // flex-grow: 1;
 }
@@ -13,16 +19,17 @@
   margin: 0;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   // border: 5px solid rgb(184, 144, 144);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 6em;
   text-align: center;
   letter-spacing: 20px;
   // line-height: 1.6;
-  padding-top: 100px;
+  padding-top: 50px;
   font-weight: bold;
 }
 
 .slogan {
+  padding-top: 20px;
   margin: 30px;
 }
 
