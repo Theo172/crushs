@@ -1,10 +1,41 @@
-<div class="home">
-<H1>C R U S H S</H1>
-<H2> VOUS ALLEZ ADORER VOUS RENCONTRER</H2>
-<%= link_to "Trouvez votre crush" %>
+<div class="container">
+<%# container-fluid %>
+<%# btn btn-standard-primary th-btn btn-1%>
+  <div class="header">
+    <div class="btn btn-login btn-list-none">
+      <ul>
+        <% if user_signed_in? %>
+          <li>
+            <%# <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
+            <%= link_to "Déconnexion", destroy_user_session_path, data: {turbo_method: :delete} %>
+          </li>
+          <% else %>
+          <li>
+            <%= link_to "Se connecter", new_user_session_path %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 
-<p>En vous inscrivant vous acceptez nos Conditions
-Générales d’Utilisation. Pour plus d’informations sur
-l’utilisation des données, consultez notre Politique
-de Confidentialité.</p>
+  <div class="main">
+    <H1 class="title">C R U S H S</H1>
+      <div>
+        <%= image_tag "logo1", class: "logo-home-page"%>
+      </div>
+    <H2 class="slogan"><em>VOUS ALLEZ ADORER VOUS RENCONTRER</em></H2>
+      <div class="btn btn-home">
+      <%= link_to "Trouvez votre crush", new_user_registration_path%>
+      </div>
+  </div>
+
+  <div class="conditions"></div>
+    <p>En vous inscrivant vous acceptez nos
+    <%= link_to "Conditions Générales d’Utilisation", about_path, class: "underline" %>.
+    Pour plus d’informations sur l’utilisation des données, consultez notre
+    <%= link_to "Politique de Confidentialité", about_path, class: "underline" %>.</p>
+  </div>
 </div>
+
+<%# lien vers les conditions générales d'utilisation %>
+<%# lien vers la Politique de confidentialité %>

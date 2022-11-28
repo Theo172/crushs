@@ -1,0 +1,119 @@
+.btn {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  text-decoration: none;
+}
+
+.btn-login {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: 2px solid #F5A7B3;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: auto;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 25px 0 0;
+  opacity: 0.6;
+  a{
+    text-decoration: none;
+    color: #F5A7B3;
+  }
+}
+
+.btn-login:hover{
+  // background-color: white;
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.btn-login:hover a {
+  list-style: none;
+  color: #F5A7B3;
+  transition: all 0.3s linear;
+}
+
+.btn-list-none ul{
+  list-style: none;
+}
+
+.btn-home {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 511px;
+  height: 73px;
+  padding: 10px;
+  margin: 50px;
+  text-align: center;
+  box-shadow: 1px 1px 2px #F5A7B3;
+  margin: 30px;
+  a {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    opacity: .7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+}
+
+.btn-home:hover {
+  border: 2px solid #F5A7B3;
+}
+.btn-home:hover a {
+  color: #F5A7B3;
+  transition: all 0.2s linear;
+  opacity: 0.9;
+  // text-shadow: 24px 24px 1px #060736;
+  // rotate: 12deg;
+}
+
+.btn-ghost {
+  color: #4A4A4A;
+  margin: 20px;
+  width: 200px;
+  height: 50px;
+  border: 3px solid white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
+
+
+.btn-gradient-left {
+  color: #F5A7B3;
+  height: 600px;
+  padding: 8px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  background: linear-gradient(#FFFFFF,#ac2121);
+  transition: background 0.3s ease;
+  opacity: 0.9;
+  :hover {
+    opacity: 1;
+  }
+}
+
+.btn-gradient-right {
+  color: #FFFFFF;
+  height: 600px;
+  padding: 8px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  background: linear-gradient(#77818d, #184681);
+  transition: background 0.3s ease;
+  opacity: 0.9;
+  :hover {
+    opacity: 1;
+  }
+}
