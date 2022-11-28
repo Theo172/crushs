@@ -1,1 +1,15 @@
-@import "home";
+@import "pages/home";
+@import "components/navbar";
+@import "font-awesome";
+@import "components/logo";
+@import "components/footer";
+@import "components/button";
+
+html, body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: rgba(245, 167, 179, 1);
+  background-color: rgba(6, 7, 54, 1);
+  margin: 0;
+}

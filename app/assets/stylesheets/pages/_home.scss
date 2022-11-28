@@ -1,0 +1,71 @@
+
+::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.header{
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 6em;
+  letter-spacing: 20px;
+  font-weight: bold;
+}
+
+.conditions{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.underline{
+  text-decoration: underline;
+  color: #F5A7B3;
+  :hover {
+    color: #F5A7B3;
+  }
+}
+
+
+
+h1, p {
+  color: #F5A7B3;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-size: 50px;
+  text-shadow: 2px 2px 0px #F5A7B3;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #F5A7B3;
+}
+a:hover {
+  color: #F5A7B3;
+  }
