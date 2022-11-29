@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
   get 'about', to: 'pages#about'
+  get "contact", to: "pages#contact"
+  resources :subscription, only: [:new, :create]
   resources :profils do
     resources :pictures
   end
