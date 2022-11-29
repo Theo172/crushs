@@ -1,0 +1,39 @@
+// .launching-title{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.background-img{
+  background-image: asset-url("");
+  background-size: cover;
+  opacity: 1;
+  // height: 62px;
+  // width: 200px;
+}
+.btn-submit{
+  color: #F5A7B3;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: stretch;
+  margin: auto;
+  justify-content: center;
+}
+
+.border-top {
+  // border-top: 3px solid #bb7c86;
+}
+
+.input-container{
+  width: 300px;
+}
+
+h1{
+  color: #FFFFFF;
+  font-size: 50px;
+  text-shadow: 2px 2px 0px #F5A7B3;
+}

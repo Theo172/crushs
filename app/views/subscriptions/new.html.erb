@@ -1,0 +1,85 @@
+<%# banner ? / titre attrayant / button mis en avant / phrase mystérieuse  %>
+<%# TeekTak a fait le choix de profiter de sa landing page de pré-lancement pour soumettre un sondage à son audience. C’est une excellente idée lorsque votre projet est en cours de création, et qu’il est encore temps d’y apporter quelques modifications. %>
+<%# présenter notre produit : page about %>
+<%# Présenter l'équipe pour ajouter une dimension humaine et augmenter la confiance des utilisateurs %>
+<%# apreçu de l'interface derrière pour donner une idée à l'utilisateur du résultat final %>
+<%# avantages pour les testeurs %>
+<%# liens vers les réseaux %>
+<%# mettre en avant le formulaire d'inscription %>
+<%# mettre en avant les problématiques auxquelles crushs répond : Ne pas parler à la personne, ne pas savoir commenter la discussion. Ne pas connaître les affinités au-delà de la bio / Perdre du temps sans se rencontrer et être déçu au moment de la rencontre %>
+
+        <div class="background-img center">
+          <div class= "">
+            <h1> Quelque chose de nouveau se prépare ... </h1>
+            <h1><em>CRUSHS</em> sera bientôt disponible ! </h1>
+
+            <h4>Soyez l'un des premiers à à participer à l'aventure et à trouver votre <em>Crush</em> !</h4>
+          </div>
+
+          <%# En prenant en compte vos attentes, vous êtes maîtres de vos rencontres. <br> %>
+          <%# En se concentrant sur l'essentiel, vous allez à l'essentiel. </p> %>
+          <%# <p>Trouve la bonne personne</p> %>
+          <%# <p>Intéressé ? Soyez l'un des premiers à nous tester</p> %>
+          <%# <p> Si vous souhaitez être parmi les premiers à participer à l'aventure et à trouver votre <em>Crush</em>
+          vous pouvez vous inscrire ci-dessous. </p> %>
+          <br>
+          <br>
+          <br>
+          <br>
+          <%# <%= image_tag "logo1", class: "logo-home-page"%>
+          <h4>Rejoignez la communauté CRUSHS et préparez vous pour vos plus belles rencontres.</h4> <br>
+
+          <div class="input-container">
+            <%# <p>Des rencontres faciles</p> %>
+            <%= simple_form_for @subscription, defaults: {input_html: { maxlength: 30 }}, wrapper: :vertical_form do |f|%>
+            <%= f.input :name, label: 'Votre nom', placeholder: "Adrien", required: true, hint: "Pas de caractères spéciaux s'il vous plaît!" %>
+            <%= f.input :mail, as: :email, label: 'Votre mail', placeholder: 'user@domain.com', class: 'input-size' %>
+            <%= f.button :submit, "Je me préinscris !", class: "btn-login btn btn-submit" %>
+            <% end %>
+          </div>
+          <%# <%= simple_form_for (@subscription) do |f| %>
+            <%# <div class="form-inputs"> %>
+              <%# <%= f.input :email, %>
+                          <%# required: true, %>
+                          <%# autofocus: true, %>
+                          <%# input_html: { autocomplete: "Je me préinscris" } %>
+            <%# </div> %>
+
+            <%# <div class="form-actions"> %>
+              <%# <%= f.button :submit, "Resend confirmation instructions" %>
+            <%# </div> %>
+          <%# <% end %>
+
+          <%# Je me préinscris (logo flêche) / formulaire au milieu de la page pour le taux de conversion / nom et mail + submit je me préinscris (ou ajouter moi) / Box shadow pour le faire ressortir%>
+          <p>Inscrivez-vous pour profiter très bientôt de notre expérience CRUSHS</p>
+
+          <h5>Pour en savoir plus sur nous :</h5>
+          <%= link_to "qui sommes-nous", about_path, class: "btn btn-login btn-submit"%>
+        </div>
+  <br>
+
+<div class="container">
+  <div class="border-top">
+    <p>accès avant-première</p>
+    <h5>Pourquoi s'inscrire ?</h5>
+
+    <p>Notre objectif est de vous permettre de rencontrer rapidement les personnes qui vous plaisent en vous laissant libre de vos Crushs. <br>
+    <p>En nous aidant à développer notre application vous aidez à son amélioration pour faire de CRUSHS la référence des rencontres amoureuses.</p>
+    Parce que nous souhaitons développer notre idée pour vous, avec vous. Pour lancer une version aboutie et percutante. <br>
+    Parce que nous souhaitons vous privilégier et vous offrir la possibilité d'être parmi les premiers à pouvoir utiliser CRUSHS. <br>
+    Grâce à vous, nous pourrons fournir la meilleure des solutions de rencontres. C’est ainsi l’assurance d’un haut niveau de satisfaction de la part de nos futurs utilisateurs.
+    </p>
+    <h5>Comment faire ?</h5>
+    <p>Remplir tout simplement les formulaires avec votre nom et votre adresse mail. Une fois fait, nous
+    vous enverrons un mail de confirmation et reviendrons rapidement vers vous pour échanger sur vos attentes et vous
+    faire tester notre application en avant-première</p>
+
+    <h5>En quoi consiste cette participation ?</h5>
+    <p> Dès votre inscription vous serez considéré comme un nouveau client, avec des avantages que nous vous reserverons (notamment accès premium offert).
+    Pour y arriver, nous vous inviterons à utiliser notre application et à nous faire un retour sur plusieurs points clés, en moins de 2mn.
+    Et c'est tout.
+    Vous recevrez régulièrement les informations sur notre offre au fur et à mesure de leur disponibilité.
+    Une fois lancée, vous aurez l'opportunité d'être nos clients référants et à nous permettre de nous aider à nous améliorer en continu.
+    Evidemment, cette proposition est sans engagement, vous êtes libres de participer ou non et d'arrêter dès que vous le voulez.</p>
+  </div>
+</div>
