@@ -21,16 +21,22 @@
         <%= image_tag "logo1", class: "logo-home-page"%>
       </div>
     <H2 class="slogan"><em>VOUS ALLEZ ADORER VOUS RENCONTRER</em></H2>
-      <div class="btn btn-home">
-      <%= link_to "Trouvez votre crush", new_subscription_path %>
+      <div class="btn btn-big">
+      <%= link_to "Trouvez votre crush", new_subscription_path, class: "a-pink" %>
       </div>
-  </div>
+      <p>Nous trouver :</p>
+      <div class="footer">
+      <%= link_to "", profils_path, class: "fab fa-github" %>
+      <%= link_to "", crushes_path, class: "fab fa-instagram" %>
+      <%= link_to "", crushes_path, class: "fab fa-facebook" %>
+      </div>
+      <%= link_to "Pour en savoir plus sur nous", new_subscription_path, class: "btn-ghost"%>
 
   <div class="conditions"></div>
     <p>En vous inscrivant vous acceptez nos
-    <%= link_to "Conditions Générales d’Utilisation", condition_path, class: "underline" %>.
+    <%= link_to "Conditions Générales d’Utilisation", condition_path, class: "a-pink-condition" %>.
     Pour plus d’informations sur l’utilisation des données, consultez notre
-    <%= link_to "Politique de Confidentialité", condition_path, class: "underline" %>.</p>
+    <%= link_to "Politique de Confidentialité", condition_path, class: "underline a-pink-condition" %>.</p>
   </div>
 </div>
 
