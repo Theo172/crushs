@@ -5,16 +5,21 @@ class SubscriptionsController < ApplicationController
   end
 
   def create
-    binding.pry
     @subscription = Subscription.new(subscription_params)
-    @subscription.save
-    # raise
-    redirect_to root_path
+    # binding.pry
+    if @subscription.save
+      flash[:notice] = 'Vous êtes bien enregistré ! Merci!'
+      # raise
+      redirect_to root_path
+    else
+      flash[:error] = "L'enregistrement n'a pas fonctionné..."
+      render :new
+    end
   end
 
   private
 
   def subscription_params
-    params.require(:subscription).permit(:name, :email)
+    params.require(:subscription).permit(:name, :mail)
   end
 end
