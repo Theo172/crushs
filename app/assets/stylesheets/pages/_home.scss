@@ -6,16 +6,11 @@
 }
 
 .container {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: space-around;
-}
-
-.header{
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
 }
 
 .main{
