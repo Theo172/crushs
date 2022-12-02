@@ -1,20 +1,4 @@
 <div class="container">
-  <div class="header">
-    <div class="btn btn-login btn-list-none">
-      <ul>
-        <% if user_signed_in? %>
-          <li>
-            <%= link_to "Déconnexion", destroy_user_session_path, data: {turbo_method: :delete} %>
-          </li>
-          <% else %>
-          <li>
-            <%= link_to "Se connecter", new_subscription_path %>
-          </li>
-        <% end %>
-      </ul>
-    </div>
-  </div>
-
   <div class="main">
     <H1 class="title">C R U S H S</H1>
       <div>
@@ -24,13 +8,13 @@
       <div class="btn btn-big">
       <%= link_to "Trouvez votre crush", new_subscription_path, class: "a-pink" %>
       </div>
+      <%= link_to "En savoir plus sur nous", new_subscription_path(anchor:"about"), class: "btn-ghost arrow-btn"%>
       <p>Où nous trouver :</p>
       <div class="footer">
       <%= link_to "", profils_path, class: "fab fa-twitter" %>
       <%= link_to "", crushes_path, class: "fab fa-instagram" %>
       <%= link_to "", crushes_path, class: "fab fa-facebook" %>
       </div>
-      <%= link_to "En savoir plus sur nous", new_subscription_path(anchor:"about"), class: "btn-ghost arrow-btn"%>
 
   <div class="conditions"></div>
     <p>En vous inscrivant vous acceptez nos
