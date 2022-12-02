@@ -1,6 +1,7 @@
 <%= simple_form_for(@profil) do |f| %>
-  <%= f.input :email, required: true %>
-  <%= f.input :password, :required => true, input_html: { value: @profil_password } %>
-  <%= f.input :password_confirmation, :required => true, input_html: { value: @profil_password } %>
-  <%= f.submit %>
-<% end  %>
+    <%= f.input :name, required: true%>
+    <%= f.input :gender, required: true %>
+    <%= f.input :birth_date, required: true %>
+    <%= f.input :city_id %>
+    <%= f.submit %>
+<% end %>

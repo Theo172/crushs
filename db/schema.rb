@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_23_181508) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_29_191710) do
   create_table "age_ranges", force: :cascade do |t|
     t.integer "min"
     t.integer "max"
@@ -92,13 +92,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_23_181508) do
     t.date "birth_date"
     t.string "city_id"
     t.string "prefered_gender"
-    t.text "email"
-    t.text "password"
     t.string "gender_id"
     t.string "age_range_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "gender"
+    t.string "user_id"
   end
 
   create_table "users", force: :cascade do |t|

@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  # Defines the root path route ("/")
-  # root "articles#index"
+  devise_for :user, controllers: { registrations: "registrations" }, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
 
   root to: 'pages#home'
   get 'about', to: 'pages#about'
@@ -20,4 +17,7 @@ Rails.application.routes.draw do
     resources :crush_messages, only: [:index, :show, :new, :create]
   end
   resources :icebreaker_questions, only: [:show]
+  # namespace :user do
+  #   root :to => "profils#create"
+  # end
 end
