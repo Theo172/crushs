@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2022_11_29_191710) do
-=======
-ActiveRecord::Schema[7.0].define(version: 2022_11_29_124121) do
->>>>>>> 2ef36248b5787b28e11f6f4d09319dc866650148
   create_table "age_ranges", force: :cascade do |t|
     t.integer "min"
     t.integer "max"
