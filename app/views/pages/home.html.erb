@@ -24,13 +24,13 @@
       <div class="btn btn-big">
       <%= link_to "Trouvez votre crush", new_subscription_path, class: "a-pink" %>
       </div>
-      <p>Nous trouver :</p>
+      <p>Où nous trouver :</p>
       <div class="footer">
-      <%= link_to "", profils_path, class: "fab fa-github" %>
+      <%= link_to "", profils_path, class: "fab fa-twitter" %>
       <%= link_to "", crushes_path, class: "fab fa-instagram" %>
       <%= link_to "", crushes_path, class: "fab fa-facebook" %>
       </div>
-      <%= link_to "Pour en savoir plus sur nous", new_subscription_path, class: "btn-ghost"%>
+      <%= link_to "En savoir plus sur nous", new_subscription_path(anchor:"about"), class: "btn-ghost arrow-btn"%>
 
   <div class="conditions"></div>
     <p>En vous inscrivant vous acceptez nos
