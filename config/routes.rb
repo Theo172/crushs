@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get "contact", to: "pages#contact"
   get "condition", to: "pages#condition"
   resources :subscriptions, only: [:new, :create]
+  resources :user do
+    resources :profils
+  end
   resources :profils do
     resources :pictures
   end
