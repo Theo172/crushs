@@ -51,6 +51,8 @@ gem "font-awesome-sass"
 
 gem "autoprefixer-rails"
 
+gem "pry"
+
 gem "simple_form", github: "heartcombo/simple_form"
 
 group :development, :test do

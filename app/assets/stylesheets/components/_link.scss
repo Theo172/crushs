@@ -1,0 +1,32 @@
+.a-pink {
+  list-style-type: none;
+  text-decoration: none;
+  color: #F5A7B3;
+  &:hover {
+    color: #F5A7B3;
+  }
+}
+.a-pink-condition {
+  list-style-type: none;
+  color: #F5A7B3;
+  &:hover {
+    color: #F5A7B3;
+  }
+}
+
+.a-white {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
+.a-black {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: black;
+  }
+}

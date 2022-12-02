@@ -1,0 +1,132 @@
+// .launching-title{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// .container{
+// display: flex;
+// flex-direction: column;
+// justify-content: space-between;
+// align-items: center;
+// }
+
+.background-img{
+  // background-image: asset-url("");
+  // background-size: cover;
+  // opacity: 1;
+  // height: 62px;
+  // width: 200px;
+}
+
+.up-presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+
+.top{
+  height: 300px;
+  margin: 30px;
+  // border: 5px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  & h1{
+    color: #F5A7B3;
+    font-size: 40px;
+    // text-shadow: 2px 2px 0px #F5A7B3;
+  }
+  & h2{
+  color: white;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  // text-shadow: 2px 2px 0px #F5A7B3;
+  }
+  & h4{
+    text-align: center;
+    color: white;
+  }
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: stretch;
+  margin: auto;
+  justify-content: center;
+}
+
+.down-presentation{
+  border-top: 1px solid white;
+  & h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+  }
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-left-20 {
+  margin-left: 20px;
+}
+
+.input-container{
+  // border: 2px solid white;
+  padding: 25px;
+  margin: 5px;
+  border-radius: 10px;
+  justify-content: center;
+  width: 450px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  &:hover{
+    // transition: opacity 0.3s ease;
+    // transition-duration: 0.2s;
+  }
+}
+
+.box-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// #user1{
+//   background-image: asset-url("user1");
+//   background-size: cover;
+//   background-position: center;
+// }
+// #user2{
+//   background-image: asset-url("user2");
+//   background-size: cover;
+//   background-position: center;
+// }
+// #user3{
+//   background-image: asset-url("user3");
+//   background-size: cover;
+//   background-position: center;
+// }
+
+.box{
+  background-color: rgba(245, 166, 179, .8);
+  color: #060736;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  // text-shadow: 1px 1px 1px black;
+  opacity: 1;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid white;
+  border-radius: 10px 10px 0 0;
+  // box-shadow: 1px 1px 2px rgb(189, 172, 172);
+  width: 400px;
+  height: 600px;
+  text-align: center;
+}

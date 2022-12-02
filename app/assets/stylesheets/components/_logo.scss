@@ -7,4 +7,12 @@
 
 .logo-home-page{
   width: 400px;
+  & :hover{
+    transition: margin-right 2s;
+    // margin-right: 30;
+  }
+}
+
+.logo {
+  width: 70px;
 }

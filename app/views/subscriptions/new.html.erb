@@ -1,0 +1,98 @@
+<%# banner ? / titre attrayant / button mis en avant / phrase mystérieuse  %>
+<%# TeekTak a fait le choix de profiter de sa landing page de pré-lancement pour soumettre un sondage à son audience. C’est une excellente idée lorsque votre projet est en cours de création, et qu’il est encore temps d’y apporter quelques modifications. %>
+<%# présenter notre produit : page about %>
+<%# aperçu de l'interface derrière pour donner une idée à l'utilisateur du résultat final %>
+<%# mettre en avant le formulaire d'inscription %>
+<%# mettre en avant les problématiques auxquelles crushs répond : Ne pas parler à la personne, ne pas savoir commenter la discussion. Ne pas connaître les affinités au-delà de la bio / Perdre du temps sans se rencontrer et être déçu au moment de la rencontre %>
+          <%# En prenant en compte vos attentes, vous êtes maîtres de vos rencontres. <br> %>
+          <%# En se concentrant sur l'essentiel, vous allez à l'essentiel. </p> %>
+
+          <%# <p> Si vous souhaitez être parmi les premiers à participer à l'aventure et à trouver votre <em>Crush</em>
+          vous pouvez vous inscrire ci-dessous. </p> %>
+          <%# <%= image_tag "logo1", class: "logo-home-page"%>
+          <%# <h4>Rejoignez la communauté CRUSHS et préparez vous pour vos plus belles rencontres.</h4> <br> %>
+          <%# <%= simple_form_for (@subscription) do |f| %>
+            <%# <div class="form-inputs"> %>
+              <%# <%= f.input :email, %>
+                          <%# required: true, %>
+                          <%# autofocus: true, %>
+                          <%# input_html: { autocomplete: "Je me préinscris" } %>
+            <%# </div> %>
+
+            <%# <div class="form-actions"> %>
+              <%# <%= f.button :submit, "Resend confirmation instructions" %>
+            <%# </div> %>
+          <%# <% end %>
+
+          <%# Je me préinscris (logo flêche) / formulaire au milieu de la page pour le taux de conversion / nom et mail + submit je me préinscris (ou ajouter moi) / Box shadow pour le faire ressortir%>
+
+          <%# <h5>Pour en savoir plus sur nous :</h5> %>
+          <%# <%= link_to "Pour en savoir plus sur nous", about_path, class: "btn-ghost"%>
+
+<div class="container">
+        <div class="up-presentation">
+          <div class= "top">
+            <h2> Quelque chose de nouveau se prépare ... </h2>
+            <h1><%= image_tag "logo1", class: "logo"%> <em class= "title">CRUSHS</em>sera bientôt disponible ! </h1>
+
+            <h4>Soyez l'un des premiers à à participer à l'aventure et à trouver votre <em>Crush</em> !</h4>
+
+
+          <p>Vous êtes prêt ? Inscrivez-vous pour profiter très bientôt de notre expérience</p>
+          </div>
+          <div class="input-container">
+            <%# <p>Des rencontres faciles</p> %>
+            <%= simple_form_for @subscription, defaults: {input_html: { maxlength: 30 }}, wrapper: :horizontal_form do |f|%>
+            <%= f.input :name, label: 'Votre nom :', placeholder: "Adrien", required: true, hint: "Pas de caractères spéciaux s'il vous plaît!" %>
+            <%= f.input :mail, as: :email, label: 'Votre mail :', placeholder: 'user@domain.com', class: 'input-size' %>
+            <%= f.button :submit, "Je me préinscris !", class: "btn-ghost" %>
+            <% end %>
+          </div>
+        </div>
+
+</div>
+  <div class="down-presentation">
+  <h3 class="margin-top-20 margin-left-20 underline cambria">En savoir plus sur nous : </h3>
+  <%# sur <em class="little-title">CRUSHS</em> %>
+    <div class="box-container" id="about">
+      <%# <p>accès avant-première</p> %>
+      <div class="box">
+        <h5 class="underline" id="white"> Qu'est ce que CRUSHS ?</h5>
+        <p>Toutes les applications de rencontre souhaitent répondre à un problème fondamental :<br>
+        <em class="underline-white">Permettre à chacun de faire une véritable rencontre qui réponde à vos attentes.</em></p>
+        <p>Chez CRUSHS, nous pensons qu'un algorithme aussi sophistiqué qu'il soit ne remplacera jamais le feeling, à l'origine d'un véritable Crush et d'une nouvelle histoire, d'un soir ou pour la vie. </p>
+        <p>Nous sommes ici pour vous aider à trouver <em class="underline-white">la bonne personne</em>, celle que vous cherchez, pas vous faire rester derrière votre écran !</p>
+        <p>Tout notre système est pensé pour aller directement à ce but, tout simplement. </p>
+        <p>Pour découvrir de nouvelles personnes, faire le premier pas, vous connaître et vous plaire : Nous sommes le <em class="underline-white">coup de pouce</em> dont vous avez besoin !</p>
+      </div>
+
+      <div class="box">
+        <h5 class="underline" id="white">Pourquoi s'inscrire ?</h5>
+        <p>Notre objectif est de vous permettre de rencontrer rapidement le ou les personnes qui vous plaisent tout en vous laissant libre de suivre votre feeling. </p>
+        <p>En nous aidant à développer notre application vous aidez à son amélioration pour <em class="underline-white">faire de CRUSHS la Référence</em> des rencontres amoureuses et atteindre notre objectif. <br>
+         <em class="underline-white">Grâce à vous</em>. </p>
+        <p>Parce que nous souhaitons développer notre idée pour vous, avec vous, nous sommes très attachés à vos avis afin de nous améliorer et lancer une version aboutie et réussie. </p>
+        <p>C’est également l’assurance d’un <em class="underline-white">haut niveau de satisfaction</em> de la part de nos futurs utilisateurs.</p>
+        <p>Enfin, parce que nous souhaitons vous privilégier et vous offrir la possibilité d'être parmi les premiers à pouvoir utiliser CRUSHS. </p>
+      </div>
+
+      <div class="box">
+        <h5 class="underline" id="white">Comment participer ?</h5>
+        <p>Remplir tout simplement le formulaire ci-dessus avec votre nom et votre adresse mail. </p>
+        <p>Nous vous enverrons ensuite un message de confirmation puis reviendrons rapidement vers vous pour échanger à propos de CRUSHS et vous proposer
+        de tester notre application en avant-première afin d'obtenir des informations essentielles, en quelques minutes et selon votre disponibilité. </p>
+        <p>Dès votre inscription vous serez considéré comme un nouvel utilisateur avec accès à l'ensemble des fonctionnalités, gratuitement et à vie
+        (parce qu'il est important de vous offrir les avantages que vous méritez). </p>
+        <p>Vous recevrez ensuite régulièrement les informations sur notre offre et notre évolution, avec accès premium aux nouveautés au fur et à mesure de leur sortie.
+        Evidemment, cette proposition est sans engagement, vous êtes libres d'arrêter dès que vous le voulez.</p>
+        </p>
+      </div>
+
+    </div>
+      <div class="footer-without-border">
+      <p> <em class="underline find-us-align">N'hésitez pas à nous suivre</em> :</p>
+      <%= link_to "", profils_path, class: "fab fa-twitter" %>
+      <%= link_to "", crushes_path, class: "fab fa-instagram" %>
+      <%= link_to "", crushes_path, class: "fab fa-facebook" %>
+      </div>
+  </div>
