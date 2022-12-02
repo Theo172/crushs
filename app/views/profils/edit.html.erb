@@ -1,7 +1,7 @@
 <% if @profil.pictures.length > 0 %>
-    <%= link_to "ajouter une image", new_profil_picture_path(@profil) %>
+    <%= link_to "ajouter une image", new_profil_picture_path[@profil] %>
 <% elsif %>
-  <%= simple_form_for(@profil) do |f| %>
+  <%= simple_form_for[@profil] do |f| %>
     <%= f.input :prefered_gender, required: true %>
     <%= f.input :age_range_id %>
     <%= f.submit %>
