@@ -20,7 +20,7 @@ class SubscriptionsController < ApplicationController
         format.html { render action: 'new' }
         format.json { render json: @subscription.errors, status: :unprocessable_entity }
         flash[:error] = "L'enregistrement n'a pas fonctionné..."
-        render :new
+        # render :new
       end
     end
   end
