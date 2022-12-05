@@ -11,5 +11,6 @@
   },
   "scripts": {
     "build": "webpack"
-  }
+  },
+  "packageManager": "yarn@3.3.0"
 }
