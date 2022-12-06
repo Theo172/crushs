@@ -8128,6 +8128,7 @@ __metadata:
     "@popperjs/core": ^2.11.6
     "@rails/webpacker": 5.4.3
     bootstrap: ^5.2.3
+    sortablejs: ^1.15.0
     typed.js: ^2.0.12
     webpack: ^4.46.0
     webpack-cli: ^3.3.12
@@ -8563,6 +8564,13 @@ __metadata:
   dependencies:
     is-plain-obj: ^1.0.0
   checksum: 5963fd191a2a185a5ec86f06e47721e8e04713eda43bb04ae60d2a8afb21241553dd5bc9d863ed2bd7c3d541b609b0c8d0e58836b1a3eb6764c09c094bcc8b00
+  languageName: node
+  linkType: hard
+
+"sortablejs@npm:^1.15.0":
+  version: 1.15.0
+  resolution: "sortablejs@npm:1.15.0"
+  checksum: bb82223a663484640d317cad510ac987f26b7a443631040407224de1be069afcc6c39048b6d8527f10f269e33595e8128d7de2fac23517c8260470f77f932d55
   languageName: node
   linkType: hard
 
