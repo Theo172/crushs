@@ -12,7 +12,7 @@ class SubscriptionsController < ApplicationController
       if @subscription.save
         SubscriptionMailer.with(subscription: @subscription).welcome_email.deliver_later
         # binding.pry
-        format.html { redirect_to(root_path, notice: "Vous êtes bien enregistré ! Merci!") }
+        format.html { redirect_to(root_path, notice: "Vous êtes bien enregistré ! Merci et à très vite pour votre Crush!") }
         format.json { render json: @subscription, status: :created, location: @subscription }
       else
         format.html { render action: 'new' }

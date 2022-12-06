@@ -1,12 +1,16 @@
 <% if notice %>
-  <div class="alert alert-info alert-dismissible fade show m-1" role="alert">
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  <div class="alert alert-info alert-dismissible fade show m-1 border-pink position-absolute bottom-0 end-0 cambria bolder fadding" role="alert" onclick="this.style.display='none'">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" style = "display:block"></button>
     <%= notice %>
   </div>
 <% end %>
 <% if alert %>
-  <div class="alert alert-warning alert-dismissible fade show m-1" role="alert">
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  <div class="alert alert-warning alert-dismissible fade show m-1 border border-danger cambria" role="alert" onclick="this.style.display='none'">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" style = "display:block"></button>
     <%= alert %>
   </div>
 <% end %>
+
+
+   <%# style="display:block;"
+   onclick="this.style.display='none'"> %>
