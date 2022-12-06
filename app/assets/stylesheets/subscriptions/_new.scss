@@ -90,6 +90,9 @@
     // transition: opacity 0.3s ease;
     // transition-duration: 0.2s;
   }
+  .transform-left {
+    transform: translate(+20%);
+  }
 }
 
 .box-container{

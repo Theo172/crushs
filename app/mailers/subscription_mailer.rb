@@ -8,6 +8,6 @@ class SubscriptionMailer < ApplicationMailer
   end
 
   def contact
-    mail(to: 'adrien.schaffner@gmail.com', subject: 'Bienvenu sur Crushs !')
+    mail(to: @subscription.mail, subject: 'Bienvenu sur Crushs !')
   end
 end

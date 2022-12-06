@@ -45,7 +45,7 @@
             <%= simple_form_for @subscription, defaults: {input_html: { maxlength: 30 }}, wrapper: :horizontal_form do |f|%>
             <%= f.input :name, label: 'Votre nom :', placeholder: "Adrien", required: true, hint: "Pas de caractères spéciaux s'il vous plaît!" %>
             <%= f.input :mail, as: :email, label: 'Votre mail :', placeholder: 'user@domain.com', class: 'input-size' %>
-            <%= f.button :submit, "Je me préinscris !", class: "btn-ghost" %>
+            <%= f.button :submit, "Je me préinscris !", class: "btn-ghost transform-left" %>
             <% end %>
           </div>
         </div>
