@@ -71,14 +71,16 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = {
     :host => 'localhost:3000',
-    :protocol => 'http'
+    :protocol => 'http',
+    :only_path => false
   }
 
   config.action_mailer.smtp_settings = {
     :address => 'smtp.gmail.com',
     :port => 601,
+    :domain => 'crushs.co',
     :user_name => "adrien schaffner",
-    :password => "Crushs2022",
+    :password => "",
     :authentication => 'plain',
     :enable_starttls_auto => true
   }

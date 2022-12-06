@@ -54,4 +54,11 @@ Rails.application.configure do
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
+
+  config.action_controller.asset_host = 'http://localhost:3000'
+  config.action_mailer.asset_host = config.action_controller.asset_host
+
+  config.active_job.queue_adapter = :test
 end
+
+# config.action_mailer.perform_deliveries = false
