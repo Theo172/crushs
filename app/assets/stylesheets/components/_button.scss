@@ -52,7 +52,9 @@
   padding: 10px;
   margin: 50px;
   text-align: center;
-  box-shadow: 1px 1px 2px #F5A7B3;
+  // box-shadow: 1px 1px 2px #F5A7B3;
+  box-shadow: inset 0 0 0 0 #F5A7B3;
+  transition: ease-out 0.3s;
   margin: 30px;
   a {
     display: block;
@@ -60,18 +62,16 @@
 
   }
   &:hover {
-    border: 2px solid #F5A7B3;
-  //   transition: margin-right 2s;
-  //   margin-right: 30px;
+    border: 1px solid #F5A7B3;
+    background-color: #ffffff;
+    box-shadow: inset 511px 0 0 0 #F5A7B3;
   }
 }
 
 .btn-big:hover a {
-  color: #F5A7B3;
-  transition: all 0.2s linear;
-  opacity: 0.9;
-  // text-shadow: 24px 24px 1px #060736;
-  // rotate: 12deg;
+  color: white;
+  transition: all 0.2s ease;
+  opacity: 1;
 }
 
 .btn-ghost {
@@ -83,12 +83,13 @@
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
-  opacity: 1;
+  opacity: 0.8;
   transition: opacity 0.3s ease;
   text-align: center;
   &:hover {
-    opacity: 0.7;
+    opacity: 1;
     color: white;
+    transition: opacity 0.3s ease;
   }
 }
 
