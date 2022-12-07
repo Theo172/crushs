@@ -1,45 +1,80 @@
-<div class="container">
+  <%# <div data-controller="loader"> %>
+    <%# <div class="loader">
+      <span class="lettre">C</span>
+      <span class="lettre">R</span>
+      <span class="lettre">U</span>
+      <span class="lettre">S</span>
+      <span class="lettre">H</span>
+      <span class="lettre">S</span>
+      <span class="lettre">.</span>
+    </div> %>
+  <%# </div> %>
 
-    <div class="header">
-      <div class="btn btn-login btn-list-none">
-        <ul>
-          <% if user_signed_in? %>
-            <li>
-              <%= link_to "Déconnexion", destroy_user_session_path, data: {turbo_method: :delete} %>
-            </li>
-            <% else %>
-            <li>
-              <%= link_to "se connecter", new_user_session_path %>
-            </li>
-          <% end %>
-        </ul>
-      </div>
+<%# <div class="container"> %>
+  <div class="header">
+    <div class="btn btn-login btn-list-none">
+      <ul>
+        <% if user_signed_in? %>
+          <li>
+            <%= link_to "Déconnexion", destroy_user_session_path, data: {turbo_method: :delete} %>
+          </li>
+          <% else %>
+          <li>
+            <%= link_to "se connecter", new_user_session_path %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
   </div>
   <div class="main">
     <H1 class="title">C R U S H S</H1>
-      <div>
-        <%= image_tag "logo1", class: "logo-home-page"%>
-      </div>
-    <H2 class="slogan"><em>VOUS ALLEZ ADORER VOUS RENCONTRER</em></H2>
-      <div class="btn btn-big">
+    <div>
+      <%= image_tag "logo1", class: "logo-home-page"%>
+    </div>
+
+    <H2 class="font-slogan m-1"><span>VOUS ALLEZ ADORER VOUS RENCONTRER</span></H2>
+    <div class="btn btn-big">
       <%= link_to "Trouvez votre crush", new_subscription_path, class: "a-pink" %>
-      </div>
-      <%= link_to "En savoir plus sur nous", new_subscription_path(anchor:"about"), class: "btn-ghost arrow-btn"%>
-      <p>Où nous trouver :</p>
+    </div>
+    <div class="btn-ghost arrow-btn">
+      <%= link_to "En savoir plus sur nous", new_subscription_path(anchor:"about", class:"underline-white")%>
+    </div>
+
       <div class="footer">
-      <%= link_to "", crushes_path, class: "fab fa-twitter" %>
-      <%= link_to "", crushes_path, class: "fab fa-instagram" %>
-      <%= link_to "", crushes_path, class: "fab fa-facebook" %>
+        <%= link_to "", crushes_path, class: "fab fa-twitter" %>
+        <%= link_to "", crushes_path, class: "fab fa-instagram" %>
+        <%= link_to "", crushes_path, class: "fab fa-facebook" %>
       </div>
 
-    <div class="conditions"></div>
+
+    <div class="conditions">
       <p>En vous inscrivant vous acceptez nos
       <%= link_to "Conditions Générales d’Utilisation", condition_path, class: "a-pink-condition" %>.
       Pour plus d’informations sur l’utilisation des données, consultez notre
       <%= link_to "Politique de Confidentialité", condition_path, class: "underline a-pink-condition" %>.</p>
     </div>
-    <p><span data-controller="typed-js"></span></p>
   </div>
+<%# </div> %>
+  <%# <div class="accueil">
+
+    <%# <span class="lettre">R</span>
+    <span class="lettre">E</span>
+    <span class="lettre">N</span>
+    <span class="lettre">C</span>
+    <span class="lettre">O</span>
+    <span class="lettre">N</span>
+    <span class="lettre">T</span>
+    <span class="lettre">R</span>
+    <span class="lettre">E</span>
+    <span class="lettre">Z</span>
+    <span class="lettre">-</span>
+    <span class="lettre">V</span>
+    <span class="lettre">O</span>
+    <span class="lettre">U</span>
+    <span class="lettre">S</span>  %>
+    <%# <h1>Vous êtes prêt à vous rencontrer ?</h1> %>
+  <%# </div> %>
+
 
   <%# <div class="intro">
       <div class="intro-text">
@@ -57,7 +92,6 @@
     <div class="slider"></div>
 
    <p><span data-controller="typed-js"></span></p> %>
-</div>
 
 <%# lien vers les conditions générales d'utilisation %>
 <%# lien vers la Politique de confidentialité %>
