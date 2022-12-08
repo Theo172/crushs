@@ -1,16 +1,15 @@
-  <%# <div data-controller="loader"> %>
-    <%# <div class="loader">
-      <span class="lettre">C</span>
-      <span class="lettre">R</span>
-      <span class="lettre">U</span>
-      <span class="lettre">S</span>
-      <span class="lettre">H</span>
-      <span class="lettre">S</span>
-      <span class="lettre">.</span>
-    </div> %>
-  <%# </div> %>
 
-<%# <div class="container"> %>
+<div class="loader" data-loader-target="loader" data-controller="loader" data-action="load@window">
+    <span class="lettre">C</span>
+    <span class="lettre">R</span>
+    <span class="lettre">U</span>
+    <span class="lettre">S</span>
+    <span class="lettre">H</span>
+    <span class="lettre">S</span>
+    <span class="lettre">.</span>
+</div>
+
+<div class="container">
   <div class="header">
     <div class="btn btn-login btn-list-none">
       <ul>
@@ -36,7 +35,7 @@
     <div class="btn btn-big">
       <%= link_to "Trouvez votre crush", new_subscription_path, class: "a-pink" %>
     </div>
-    <div class="btn-ghost arrow-btn">
+    <div class=" btn btn-ghost arrow-btn">
       <%= link_to "En savoir plus sur nous", new_subscription_path(anchor:"about", class:"underline-white")%>
     </div>
 
@@ -54,10 +53,10 @@
       <%= link_to "Politique de Confidentialité", condition_path, class: "underline a-pink-condition" %>.</p>
     </div>
   </div>
-<%# </div> %>
-  <%# <div class="accueil">
+</div>
 
-    <%# <span class="lettre">R</span>
+  <%# <div class="accueil">
+    <span class="lettre">R</span>
     <span class="lettre">E</span>
     <span class="lettre">N</span>
     <span class="lettre">C</span>
@@ -71,27 +70,5 @@
     <span class="lettre">V</span>
     <span class="lettre">O</span>
     <span class="lettre">U</span>
-    <span class="lettre">S</span>  %>
-    <%# <h1>Vous êtes prêt à vous rencontrer ?</h1> %>
-  <%# </div> %>
-
-
-  <%# <div class="intro">
-      <div class="intro-text">
-        <h1 class="hide">
-          <span class="text">Creating inovation</span>
-        </h1>
-        <h1 class="hide">
-          <span class="text">For Everyday</span>
-        </h1>
-        <h1 class="hide">
-          <span class="text">people.</span>
-        </h1>
-      </div>
-    </div>
-    <div class="slider"></div>
-
-   <p><span data-controller="typed-js"></span></p> %>
-
-<%# lien vers les conditions générales d'utilisation %>
-<%# lien vers la Politique de confidentialité %>
+    <span class="lettre">S</span>
+  </div> %>

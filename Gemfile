@@ -55,7 +55,6 @@ gem "pry"
 
 gem "simple_form", github: "heartcombo/simple_form"
 
-
 gem 'letter_opener', group: :development
 
 group :development, :test do
