@@ -5,32 +5,16 @@ export default class extends Controller {
 
   connect() {
     const loader = document.querySelector('.loader');
-    window.addEventListener ("load", loader.classList.add('fondu-out'))
+    // Event.preventDefaulft()
+    var delayInMilliseconds = 1000; //1 second
+
+    setTimeout(function() {
+      //your code to be executed after 1 second
+      window.addEventListener ("load", loader.classList.add('fondu-out'))
+    }, delayInMilliseconds);
+    // setTimeout(() => {
+    //   // window.addEventListener ("load", loader.classList.add('fondu-out'))
+
+    // }, 10);
   }
 }
-
-
-
-
-
-
-  // console.log(window)
-  // const titre = document.querySelector('h1');
-  // console.log(titre)
-  // home() {
-
-
-  //   window.addEventListener('load', () => {
-
-  //       loader.classList.add('fondu-out');
-
-  //   })
-  // }
-
-
-
-// window est l'objet
-// addEventListener = action
-// quand la fenêtre aura chargé  -> load
-// .classList = donne accès aux method des class
-// method add ('fondu-out') : lui ajoute cette method

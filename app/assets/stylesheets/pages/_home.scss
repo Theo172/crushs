@@ -2,14 +2,14 @@
 body{
   height: 100vh;
 }
-// .container {
-//   // height: 100vh;
-//   margin-top: 30px;
-//   display: flex;
-//   flex-direction: column;
-//   width: 100%;
-//   justify-content: space-between;
-// }
+.container {
+  // height: 100vh;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
 
 // .accueil H1 {
 //   font-size: 120px;
@@ -17,6 +17,8 @@ body{
 // }
 
 .loader {
+  top: 0;
+  left: 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -33,6 +35,15 @@ body{
   letter-spacing: 15px;
   margin-bottom: 150px;
   animation: flash 2s linear 0.5s infinite;
+}
+
+.lettre-s {
+  color: #F5A7B3;
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin-bottom: 75px;
+  // animation: flash 2s linear 0.8s;
+  animation: flash linear 2s 3;
 }
 // infinite
 @keyframes flash {
@@ -51,8 +62,9 @@ body{
 }
 
 .fondu-out{
-  opacity: 0;
-  transition: opacity 0.4s ease-out;
+  height: 0px;
+  // transition-delay: 2s;
+  transition: height 1s ease-out;
 }
 
 .main{
@@ -63,12 +75,12 @@ body{
 }
 
 .title {
-  margin: 0;
+  margin-bottom: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   letter-spacing: 20px;
   font-weight: bold;
   color: #FFFFFF;
-  font-size: 40px;
+  font-size: 50px;
   text-shadow: 2px 2px 0px #F5A7B3;
 }
 

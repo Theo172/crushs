@@ -1,12 +1,13 @@
 
 <div class="loader" data-loader-target="loader" data-controller="loader" data-action="load@window">
-    <span class="lettre">C</span>
-    <span class="lettre">R</span>
-    <span class="lettre">U</span>
-    <span class="lettre">S</span>
-    <span class="lettre">H</span>
-    <span class="lettre">S</span>
-    <span class="lettre">.</span>
+    <span class="lettre cambria">C</span>
+    <span class="lettre cambria">R</span>
+    <span class="lettre cambria">U</span>
+    <span class="lettre cambria">S</span>
+    <span class="lettre cambria">H</span>
+    <span class="lettre cambria">S</span>
+    <span class="lettre cambria">.</span>
+
 </div>
 
 <div class="container">
@@ -31,29 +32,36 @@
       <%= image_tag "logo1", class: "logo-home-page"%>
     </div>
 
-    <H2 class="font-slogan m-1"><span>VOUS ALLEZ ADORER VOUS RENCONTRER</span></H2>
+    <H2 class="font-slogan m-1 lettre-s"><span>RENCONTREZ-VOUS</span></H2>
+
     <div class="btn btn-big">
       <%= link_to "Trouvez votre crush", new_subscription_path, class: "a-pink" %>
     </div>
     <div class=" btn btn-ghost arrow-btn">
       <%= link_to "En savoir plus sur nous", new_subscription_path(anchor:"about", class:"underline-white")%>
     </div>
-
-      <div class="footer">
-        <%= link_to "", crushes_path, class: "fab fa-twitter" %>
-        <%= link_to "", crushes_path, class: "fab fa-instagram" %>
-        <%= link_to "", crushes_path, class: "fab fa-facebook" %>
-      </div>
-
-
-    <div class="conditions">
-      <p>En vous inscrivant vous acceptez nos
-      <%= link_to "Conditions Générales d’Utilisation", condition_path, class: "a-pink-condition" %>.
-      Pour plus d’informations sur l’utilisation des données, consultez notre
-      <%= link_to "Politique de Confidentialité", condition_path, class: "underline a-pink-condition" %>.</p>
-    </div>
   </div>
 </div>
+
+
+
+
+
+
+      <%# <div class="footer">
+        <%= link_to "", crushes_path, class: "fab fa-twitter" %>
+        <%# <%= link_to "", crushes_path, class: "fab fa-instagram" %>
+        <%# <%= link_to "", crushes_path, class: "fab fa-facebook" %>
+      <%# </div> %>
+
+
+    <%# <div class="conditions">
+      <p>En vous inscrivant vous acceptez nos
+      <%= link_to "Conditions Générales d’Utilisation", condition_path, class: "a-pink-condition" %>.
+      <%# Pour plus d’informations sur l’utilisation des données, consultez notre %>
+      <%# <%= link_to "Politique de Confidentialité", condition_path, class: "underline a-pink-condition" .%>
+      <%# </p>   %>
+    <%# </div> %>
 
   <%# <div class="accueil">
     <span class="lettre">R</span>
