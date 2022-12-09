@@ -11,10 +11,6 @@ body{
   justify-content: space-between;
 }
 
-// .accueil H1 {
-//   font-size: 120px;
-//   margin-bottom: 450px;
-// }
 
 .loader {
   top: 0;
@@ -23,10 +19,35 @@ body{
   width: 100%;
   height: 100%;
   background: rgba(6, 7, 54, 1);
+  // background: url("couple");
   background-size: contain;
+  // background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.fondu-out{
+  height: 0%;
+  // transition-delay: 2s;
+  transition: height 0.6s ease-out;
+}
+
+.slider {
+  // background-color: #F5A7B3;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.transform-y-0 {
+  transform: translateY(0%);
+  transition: 0.5s ease-out;
+  height: 0%;
 }
 
 .lettre {
@@ -34,7 +55,7 @@ body{
   font-size: 80px;
   letter-spacing: 15px;
   margin-bottom: 150px;
-  animation: flash 2s linear 0.5s infinite;
+  animation: flash 1s linear 0.5s infinite;
 }
 
 .lettre-s {
@@ -43,7 +64,7 @@ body{
   letter-spacing: 10px;
   margin-bottom: 75px;
   // animation: flash 2s linear 0.8s;
-  animation: flash linear 2s 3;
+  animation: flash linear 1s 4;
 }
 // infinite
 @keyframes flash {
@@ -61,11 +82,6 @@ body{
   }
 }
 
-.fondu-out{
-  height: 0px;
-  // transition-delay: 2s;
-  transition: height 1s ease-out;
-}
 
 .main{
   display: flex;
@@ -119,6 +135,7 @@ body{
   justify-content: center;
 }
 
+
 // .intro {
 //   background: black;
 //   position: fixed;
@@ -130,15 +147,7 @@ body{
 //   justify-content: center;
 //   align-items: center;
 // }
-// .slider {
-//   background: rgb(97, 105, 109);
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   transform: translateY(100%);
-// }
+
 
 // .intro-text {
 //   color: rgb(233, 233, 233);

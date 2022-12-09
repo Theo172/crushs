@@ -7,8 +7,9 @@
     <span class="lettre cambria">H</span>
     <span class="lettre cambria">S</span>
     <span class="lettre cambria">.</span>
-
 </div>
+
+<div class="slider"></div>
 
 <div class="container">
   <div class="header">
@@ -32,14 +33,15 @@
       <%= image_tag "logo1", class: "logo-home-page"%>
     </div>
 
-    <H2 class="font-slogan m-1 lettre-s"><span>RENCONTREZ-VOUS</span></H2>
+    <H2 class="font-slogan m-1 lettre-s cambria"><span>RENCONTREZ-VOUS</span></H2>
 
-    <div class="btn btn-big">
-      <%= link_to "Trouvez votre crush", new_subscription_path, class: "a-pink" %>
-    </div>
-    <div class=" btn btn-ghost arrow-btn">
-      <%= link_to "En savoir plus sur nous", new_subscription_path(anchor:"about", class:"underline-white")%>
-    </div>
+      <div class="btn btn-big">
+        <%= link_to "Trouvez votre crush", new_subscription_path, class: "a-pink" %>
+      </div>
+      <div class=" btn btn-ghost arrow-btn">
+        <%= link_to "En savoir plus sur nous", new_subscription_path(anchor:"about", class:"underline-white")%>
+      </div>
+
   </div>
 </div>
 
