@@ -1,10 +1,13 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["box", "reveal"]
+  static targets = ["reveal"]
 
   connect() {
     console.log("Hello from scroll controller !")
+    document.querySelectorAll('[class*="reveal-"]').forEach(function(r) {
+      observer.observe(r)
+    })
   }
 }
 const ratio = .2
@@ -24,9 +27,9 @@ const handleIntersect = function(entries, observer ) {
   });
 }
 const observer = new IntersectionObserver(handleIntersect, options)
-document.querySelectorAll('[class*="reveal-"]').forEach(function(r) {
-  observer.observe(r)
-})
+// document.querySelectorAll('[class*="reveal-"]').forEach(function(r) {
+  //   observer.observe(r)
+  // })
 
 // const scrolled = window.scrollY;
 // window.addEventListener("scroll", scrolled.classList.add(''));
