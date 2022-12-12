@@ -1,18 +1,41 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["box", "visibility"]
+  static targets = ["box", "reveal"]
 
   connect() {
     console.log("Hello from scroll controller !")
   }
-
-  scroll() {
-    const scrolled = window.scrollY;
-    window.addEventListener("scroll", scrolled.classList.remove('visibility'));
-    console.log("hey");
-  };
 }
+const ratio = .2
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: ratio
+}
+
+const handleIntersect = function(entries, observer ) {
+  entries.forEach(function(entry) {
+    console.log(entry.intersectionRatio);
+      if (entry.intersectionRatio > ratio) {
+        entry.target.classList.add('reveal-visible')
+        observer.unobserve(entry.target)
+      }
+  });
+}
+const observer = new IntersectionObserver(handleIntersect, options)
+document.querySelectorAll('[class*="reveal-"]').forEach(function(r) {
+  observer.observe(r)
+})
+
+// const scrolled = window.scrollY;
+// window.addEventListener("scroll", scrolled.classList.add(''));
+// console.log("hey");
+
+// function reveal() {
+//   var reveals = document.querySelectorAll(".reveal")
+
+
 // .removeClass
 // connect() {
 //   const loader = document.querySelector('.loader');

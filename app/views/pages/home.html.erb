@@ -13,7 +13,7 @@
 
 <div class="container">
   <div class="header">
-    <div class="btn btn-login btn-list-none data-loader-target="loader" data-controller="loader" data-action="load@window"">
+    <div class="btn btn-login btn-list-none" data-loader-target="loader" data-controller="loader" data-action="load@window">
       <ul>
         <% if user_signed_in? %>
           <li>
@@ -33,12 +33,12 @@
       <%= image_tag "logo1", class: "logo-home-page"%>
     </div>
 
-    <H2 class="font-slogan letter-spacing-1 cambria" data-loader-target="loader" data-controller="loader" data-action="load@window"><span>RENCONTREZ-VOUS</span></H2>
+    <H2 class="font-slogan slogan letter-spacing-1 cambria" data-loader-target="loader" data-controller="loader" data-action="load@window"><span>RENCONTREZ-VOUS</span></H2>
 
-      <div class="btn btn-big" data-loader-target="loader" data-controller="loader" data-action="load@window">
-        <%= link_to "Trouvez votre crush", new_subscription_path, class: "a-pink" %>
+      <div class="btn btn-big">
+        <%= link_to "Trouvez votre crush", new_subscription_path, class: "a-pink"%>
       </div>
-      <div class="btn btn-ghost" data-loader-target="loader" data-controller="loader" data-action="load@window">
+      <div class="btn btn-ghost">
         <%= link_to "En savoir plus sur nous", new_subscription_path(anchor:"about", class:"underline-white")%>
       </div>
 

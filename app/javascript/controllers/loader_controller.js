@@ -9,12 +9,12 @@ export default class extends Controller {
     const title = document.querySelector('.title');
     const slogan = document.querySelector('.font-slogan');
     const btn = document.querySelector('.btn-ghost');
-    const btn_login = document.querySelector('.btn-login');
+    // const btn_login = document.querySelector('.btn-login');
     // Event.preventDefaulft()
     var delayInMilliseconds = 2000; //1 second
     var delayInMilliseconds2100 = 2100;
     var delayInMilliseconds2400 = 2400;
-    var delayInMilliseconds2900 = 2900;
+    // var delayInMilliseconds2900 = 2900;
 
     setTimeout(function() {
       //your code to be executed after 1 second
@@ -33,17 +33,22 @@ export default class extends Controller {
 
     setTimeout(function() {
       //your code to be executed after 1 second
-      window.addEventListener ("load", slogan.classList.add('transform-x-20'))
+      window.addEventListener ("load", slogan.classList.add('transform-slogan'))
     }, delayInMilliseconds2400);
+
+    // setTimeout(function() {
+    //   //your code to be executed after 1 second
+    //   window.addEventListener ("load", slogan.classList.add('transform-y-0'))
+    // }, delayInMilliseconds2400);
 
     // setTimeout(function() {
     //   //your code to be executed after 1 second
     //   window.addEventListener ("load", btn_login.classList.add('transform-y-20'))
     // }, delayInMilliseconds2900);
 
-    setTimeout(function() {
-      //your code to be executed after 1 second
-      window.addEventListener ("load", btn.classList.add('transform-y-50'))
-    }, delayInMilliseconds2400);
+    // setTimeout(function() {
+    //   //your code to be executed after 1 second
+    //   window.addEventListener ("load", btn.classList.add('transform-y-50'))
+    // }, delayInMilliseconds2400);
   }
 }

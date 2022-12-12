@@ -43,6 +43,14 @@ body{
   transform: translateY(100%);
 }
 
+.slogan {
+  transform: translateY(-30px);
+}
+
+.transform-slogan {
+  transform: translateY(10px);
+  transition: 1s ease-out;
+}
 .transform-y-0 {
   transform: translateY(0%);
   transition: 0.7s ease-out;
