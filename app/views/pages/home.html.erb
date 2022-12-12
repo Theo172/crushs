@@ -13,7 +13,7 @@
 
 <div class="container">
   <div class="header">
-    <div class="btn btn-login btn-list-none">
+    <div class="btn btn-login btn-list-none data-loader-target="loader" data-controller="loader" data-action="load@window"">
       <ul>
         <% if user_signed_in? %>
           <li>
@@ -28,17 +28,17 @@
     </div>
   </div>
   <div class="main">
-    <H1 class="title">C R U S H S</H1>
+    <H1 class="title lettre-s" data-loader-target="loader" data-controller="loader" data-action="load@window">C R U S H S</H1>
     <div>
       <%= image_tag "logo1", class: "logo-home-page"%>
     </div>
 
-    <H2 class="font-slogan m-1 lettre-s cambria"><span>RENCONTREZ-VOUS</span></H2>
+    <H2 class="font-slogan letter-spacing-1 cambria" data-loader-target="loader" data-controller="loader" data-action="load@window"><span>RENCONTREZ-VOUS</span></H2>
 
-      <div class="btn btn-big">
+      <div class="btn btn-big" data-loader-target="loader" data-controller="loader" data-action="load@window">
         <%= link_to "Trouvez votre crush", new_subscription_path, class: "a-pink" %>
       </div>
-      <div class=" btn btn-ghost arrow-btn">
+      <div class="btn btn-ghost" data-loader-target="loader" data-controller="loader" data-action="load@window">
         <%= link_to "En savoir plus sur nous", new_subscription_path(anchor:"about", class:"underline-white")%>
       </div>
 
@@ -66,19 +66,5 @@
     <%# </div> %>
 
   <%# <div class="accueil">
-    <span class="lettre">R</span>
-    <span class="lettre">E</span>
-    <span class="lettre">N</span>
-    <span class="lettre">C</span>
-    <span class="lettre">O</span>
-    <span class="lettre">N</span>
-    <span class="lettre">T</span>
-    <span class="lettre">R</span>
-    <span class="lettre">E</span>
-    <span class="lettre">Z</span>
-    <span class="lettre">-</span>
-    <span class="lettre">V</span>
-    <span class="lettre">O</span>
-    <span class="lettre">U</span>
-    <span class="lettre">S</span>
+    <span class="lettre">RENCONTREZ-VOUS</span>
   </div> %>

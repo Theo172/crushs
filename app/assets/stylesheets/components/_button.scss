@@ -4,7 +4,9 @@
   -moz-user-select: none;
   user-select: none;
   text-decoration: none;
-  display: block;
+  & a{
+    display: block;
+  }
 }
 
 .btn-login {
@@ -83,16 +85,15 @@
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
-  opacity: 0.8;
-  // transition: opacity 0.3s ease;
   text-align: center;
-  &:hover {
-    opacity: 1;
-    color: white;
-    // transition: opacity 0.3s ease;
-  }
   & a {
+    display: block;
     color: white;
+  }
+  &:hover {
+    opacity: 0.8;
+    color: white;
+    // transition:  0.3s ease;
   }
 }
 
