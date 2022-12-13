@@ -53,7 +53,9 @@ gem "autoprefixer-rails"
 
 gem "pry"
 
-gem 'email_validator'
+# gem 'email_validator'
+
+# gem 'bootstrap'
 
 gem "simple_form", github: "heartcombo/simple_form"
 

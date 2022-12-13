@@ -4,20 +4,15 @@ class SubscriptionsController < ApplicationController
     @subscription = Subscription.new # Needed to instantiate the form_with
   end
 
-  # def valid_email?(email)
-  #   email-regex = ^[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$
-  #   email =~email-regex
-  # end
-
   def create
     @subscription = Subscription.new(subscription_params)
     # binding.pry
     respond_to do |format|
 
       if @subscription.save
-        SubscriptionMailer.with(subscription: @subscription).welcome_email.deliver_now
         # binding.pry
-        format.html { redirect_to(root_path, notice: "Vous êtes bien enregistré ! Merci et à très vite pour votre Crush!") }
+        SubscriptionMailer.with(subscription: @subscription).welcome_email.deliver_now
+        format.html { redirect_to(root_path, notice: "Vous êtes bien enregistré ! Merci !") }
         format.json { render json: @subscription, status: :created, location: @subscription }
       else
         format.html { render action: 'new' }

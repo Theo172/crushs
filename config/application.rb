@@ -32,7 +32,8 @@ module Crushs
     # config.eager_load_paths << Rails.root.join("extras")
 
     # Don't generate system test files.
-    config.generators.system_tests = nil
+    config.generators.system_tests = :smtp
+    # config.generators.system_tests = nil
 
     # config.asset_host = 'http://local.com'
   end

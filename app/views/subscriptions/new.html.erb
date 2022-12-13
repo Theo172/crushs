@@ -10,10 +10,9 @@
             <p>Vous êtes prêt ? Inscrivez-vous pour profiter très bientôt de notre expérience : </p>
           </div>
           <div class="input-container reveal-2">
-            <%# <p>Des rencontres faciles</p> %>
-            <%= simple_form_for @subscription, defaults: {input_html: { maxlength: 30 }}, wrapper: :horizontal_form do |f|%>
-            <%= f.input :name, label: 'Votre nom :', placeholder: "Adrien", required: true, hint: "Pas de caractères spéciaux s'il vous plaît!" %>
-            <%= f.input :mail, as: :email, label: 'Votre mail :', placeholder: 'user@domain.com', class: 'input-size' %>
+            <%= simple_form_for @subscription, defaults: {input_html: { minlength: 3, maxlength: 30}}, wrapper: :vertical_form do |f|%>
+            <%= f.input :name, label: 'Votre nom :', placeholder: "Nom", required: true, hint: "Pas de caractères spéciaux s'il vous plaît!" %>
+            <%= f.input :mail, as: :email, label: 'Votre mail :',required: true, placeholder: 'user@domain.com', class: 'input-size', error: 'Username is mandatory, please specify one' %>
             <%= f.button :submit, "Je me préinscris !", class: "btn-ghost transform-left" %>
             <% end %>
           </div>
