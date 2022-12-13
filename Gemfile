@@ -53,6 +53,8 @@ gem "autoprefixer-rails"
 
 gem "pry"
 
+gem 'email_validator'
+
 gem "simple_form", github: "heartcombo/simple_form"
 
 gem 'letter_opener', group: :development

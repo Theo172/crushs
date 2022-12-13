@@ -33,5 +33,7 @@ module Crushs
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # config.asset_host = 'http://local.com'
   end
 end
