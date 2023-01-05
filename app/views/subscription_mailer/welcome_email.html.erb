@@ -1,13 +1,31 @@
 <html>
   <head>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      <style type="text/css" media="screen">
+      body {background-color: #060736}
+      h1 { color: #F5A7B3; }
+      p { color: white }
+      .bold {font-weight: bold}
+      .box-container {margin-top: 15%; display: flex ; flex-direction: column; align-items: center; justify-content: space-between}
+      /* .signature {display: flex ; flex-direction: column; align-items: center, justify-content: space-around} */
+    </style>
   </head>
+
   <body>
-    <h1>Welcome to CRUSHS <%= @subscription.name %></h1>
-    <p>
-      You have successfully signed up to example.com,
-      your username is: <%= @subscription.name %>.<br>
-    </p>
-    <p>Thanks for joining and have a great day!</p>
+  <div class="box-container bold">
+    <h1>Bienvenu sur <span>CRUSHS</span> <%= @subscription.name %> !</h1>
+    <p> Bientôt prêt à trouver votre CRUSH ??</p>
+    <p >Nous reviendrons très vite vers vous pour la suite et vous faire participer à l'aventure !</p>
+    <p>Passez une bonne journée et un grand merci !</p>
+    <p>Votre équipe Crushs</p>
+    <%# <%=image_tag("logo1") %>
+
+    </div>
+    <%# <div class="signature">
+    <p>l'équipe CRUSHS</p>
+    <p>crushs.connexion@gmail.com</p>
+    <p>07 80 33 26 27</p>
+    <p> www.crushs.co</p>
+    </div> %>
   </body>
 </html>

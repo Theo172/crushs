@@ -4,10 +4,11 @@ class SubscriptionMailer < ApplicationMailer
   def welcome_email
     @subscription = params[:subscription]
     @url = 'localhost:3000/subscriptions/new '
+    # binding.pry
     mail(to: @subscription.mail, subject: 'Bienvenu sur Crushs !')
   end
 
   def contact
-    mail(to: 'adrien.schaffner@gmail.com', subject: 'Bienvenu sur Crushs !')
+    mail(to: @subscription.mail, subject: 'Bienvenu sur Crushs !')
   end
 end

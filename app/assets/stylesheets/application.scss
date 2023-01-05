@@ -7,13 +7,22 @@
 @import "components/link";
 @import "components/color";
 @import "components/font";
+@import "components/flashes";
 @import "subscriptions/new";
+@import "sessions/new";
+// @import "bootstrap";
 
-html, body {
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   color: rgba(245, 167, 179, 1);
   background-color: rgba(6, 7, 54, 1);
-  // margin: 0;
+  margin: 0;
 }

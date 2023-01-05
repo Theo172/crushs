@@ -1,4 +1,5 @@
 class ProfilsController < ApplicationController
+  belongs_to :user
   before_action :get_user
 
   def index

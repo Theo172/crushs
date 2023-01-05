@@ -1,7 +1,18 @@
+<div class="loader" data-loader-target="loader" data-controller="loader" data-action="load@window">
+    <span class="lettre cambria">C</span>
+    <span class="lettre cambria">R</span>
+    <span class="lettre cambria">U</span>
+    <span class="lettre cambria">S</span>
+    <span class="lettre cambria">H</span>
+    <span class="lettre cambria">S</span>
+    <span class="lettre cambria">.</span>
+</div>
+
+<div class="slider"></div>
+
 <div class="container">
- <div class="navbar">
   <div class="header">
-    <div class="btn btn-login btn-list-none">
+    <div class="btn btn-login btn-list-none" data-loader-target="loader" data-controller="loader" data-action="load@window">
       <ul>
         <% if user_signed_in? %>
           <li>
@@ -16,29 +27,43 @@
     </div>
   </div>
   <div class="main">
-    <H1 class="title">C R U S H S</H1>
-      <div>
-        <%= image_tag "logo1", class: "logo-home-page"%>
-      </div>
-    <H2 class="slogan"><em>VOUS ALLEZ ADORER VOUS RENCONTRER</em></H2>
+    <H1 class="title lettre-s" data-loader-target="loader" data-controller="loader" data-action="load@window">C R U S H S</H1>
+    <div>
+      <%= image_tag "logo1", class: "logo-home-page"%>
+    </div>
+
+    <H2 class="font-slogan slogan letter-spacing-1 cambria" data-loader-target="loader" data-controller="loader" data-action="load@window"><span>RENCONTREZ-VOUS</span></H2>
+
       <div class="btn btn-big">
-      <%= link_to "Trouvez votre crush", new_subscription_path, class: "a-pink" %>
+        <%= link_to "Trouvez votre crush", new_subscription_path, class: "a-pink"%>
       </div>
-      <%= link_to "En savoir plus sur nous", new_subscription_path(anchor:"about"), class: "btn-ghost arrow-btn"%>
-      <p>Où nous trouver :</p>
-      <div class="footer">
-      <%= link_to "", crushes_path, class: "fab fa-twitter" %>
-      <%= link_to "", crushes_path, class: "fab fa-instagram" %>
-      <%= link_to "", crushes_path, class: "fab fa-facebook" %>
+      <div class="btn btn-ghost">
+        <%= link_to "En savoir plus sur nous", new_subscription_path(anchor:"about", class:"underline-white")%>
       </div>
 
-  <div class="conditions"></div>
-    <p>En vous inscrivant vous acceptez nos
-    <%= link_to "Conditions Générales d’Utilisation", condition_path, class: "a-pink-condition" %>.
-    Pour plus d’informations sur l’utilisation des données, consultez notre
-    <%= link_to "Politique de Confidentialité", condition_path, class: "underline a-pink-condition" %>.</p>
   </div>
 </div>
 
-<%# lien vers les conditions générales d'utilisation %>
-<%# lien vers la Politique de confidentialité %>
+
+
+
+
+
+      <%# <div class="footer">
+        <%= link_to "", crushes_path, class: "fab fa-twitter" %>
+        <%# <%= link_to "", crushes_path, class: "fab fa-instagram" %>
+        <%# <%= link_to "", crushes_path, class: "fab fa-facebook" %>
+      <%# </div> %>
+
+
+    <%# <div class="conditions">
+      <p>En vous inscrivant vous acceptez nos
+      <%= link_to "Conditions Générales d’Utilisation", condition_path, class: "a-pink-condition" %>.
+      <%# Pour plus d’informations sur l’utilisation des données, consultez notre %>
+      <%# <%= link_to "Politique de Confidentialité", condition_path, class: "underline a-pink-condition" .%>
+      <%# </p>   %>
+    <%# </div> %>
+
+  <%# <div class="accueil">
+    <span class="lettre">RENCONTREZ-VOUS</span>
+  </div> %>
